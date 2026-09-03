@@ -1,0 +1,277 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #171717;
+}
+
+.navbar-brand {
+    letter-spacing: 1px;
+}
+.navbar-nav .nav-link {
+    margin-left: 10px;
+}
+.navbar-nav .nav-link:hover {
+    color: #dc3545;
+}
+
+.hero {
+    min-height: 150vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.75)
+        ),
+        url("img/image1.png");
+    background-size: cover;
+    background-position: center;
+}
+.hero-content {
+    max-width: 800px;
+}
+.hero h1 {
+    font-size: clamp(3rem, 8vw, 7rem);
+    font-weight: bold;
+    line-height: 0.95;
+    letter-spacing: -3px;
+}
+.hero h1 span {
+    color: #dc3545;
+}
+.hero p {
+    font-size: 1.2rem;
+    max-width: 650px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.info-card {
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+footer {
+    background-color: #111;
+    color: #aaa;
+}
+footer h5 {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: 70vh;
+        text-align: center;
+    }
+    .hero h1 {
+        font-size: 3.5rem;
+        letter-spacing: -2px;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .hero .btn {
+        margin: 5px;
+        width: 90%;
+    }
+}
+
+.sejarah-header {
+    background-color: white;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.sejarah-header h1 {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.sejarah-header p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.sejarah-content {
+    padding: 60px 20px;
+}
+
+.sejarah-content .container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.sejarah-content h2 {
+    color: #dc3545;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    margin-bottom: 20px;
+}
+
+.sejarah-content p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.page-navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+
+    .sejarah-header {
+        padding: 50px 15px;
+    }
+
+    .sejarah-content {
+        padding: 40px 15px;
+    }
+
+    .sejarah-content p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .page-navigation {
+        flex-direction: column;
+    }
+
+    .page-navigation .btn {
+        width: 100%;
+    }
+
+}
+
+/* =========================
+   PERSONIL
+========================= */
+
+.person-card {
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.person-card:hover {
+    transform: translateY(-8px);
+}
+
+.person-card img {
+    height: 300px;
+    object-fit: cover;
+}
+
+
+/* =========================
+   GALERI
+========================= */
+
+.gallery-img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.gallery-img:hover {
+    transform: scale(1.03);
+}
+
+
+/* =========================
+   SEJARAH
+========================= */
+
+#sejarah img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+#sejarah h2,
+#personil h2,
+#galeri h2 {
+    font-size: 2.5rem;
+}
+
+@media (max-width: 768px) {
+
+    .person-card img {
+        height: 350px;
+    }
+
+    .gallery-img {
+        height: 230px;
+    }
+
+    #sejarah h2,
+    #personil h2,
+    #galeri h2 {
+        font-size: 2rem;
+    }
+}
+
+/* =========================
+   SAD ENDING WKWK
+========================= */
+
+#cerita {
+    border-top: 1px solid #eee;
+}
+
+#cerita h2 {
+    font-size: 2.5rem;
+}
+
+#cerita h3 {
+    font-size: 1.5rem;
+}
+
+.cerita-foto {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.cerita-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cerita-text {
+    max-width: 750px;
+    line-height: 1.8;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+
+    #cerita h2 {
+        font-size: 2rem;
+    }
+
+    .cerita-foto {
+        width: 220px;
+        height: 220px;
+    }
+
+    .cerita-text {
+        font-size: 1rem;
+    }
+}
+
